@@ -1,0 +1,1272 @@
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON> <http://purl.org/dc/terms/abstract> "STRON is a Smart Tourism Recommendations Ontology designed to integrate data on events, hotels, restaurants, attractions, and transport within urban environments. It supports complex queries and inference via OWL restrictions and SWRL rules, enabling recommendations based on quality, affordability, temporal scheduling, and geographical proximity. STRON aims to facilitate data interoperability and enrich decision support in tourism applications"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON> <http://purl.org/dc/terms/title> "STRON: Smart Tourism Recommendations Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a hotel to a price category such as low, medium or high."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "has hotel price category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a restaurant to a price category such as low, medium or high."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "has restaurant price category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a transport to a price category such as low, medium or high."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> <http://www.w3.org/2000/01/rdf-schema#label> "has transport price category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an attraction to its city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.w3.org/2000/01/rdf-schema#label> "is located in (atractions)"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a hotel to its city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.w3.org/2000/01/rdf-schema#label> "is located in (hotels)"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a restauran to its city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "is located in (restaurants)"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an event to the city where it occurs."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.w3.org/2000/01/rdf-schema#label> "occurs in"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a transport service to the city it serves."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.w3.org/2000/01/rdf-schema#label> "serves city"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the atraction"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> <http://www.w3.org/2000/01/rdf-schema#label> "Atraction name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the city"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> <http://www.w3.org/2000/01/rdf-schema#label> "City name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "The company providing the transport service."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> <http://www.w3.org/2000/01/rdf-schema#label> "company"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the event takes place."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "event date"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the event"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName> <http://www.w3.org/2000/01/rdf-schema#label> "Event name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "category of the hotel. ranging from 1 to 5. Also known as stars."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> <http://www.w3.org/2000/01/rdf-schema#label> "hotel cateogry"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the hotel"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "An estimated/average of what the activity will cost"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "An estimated/average of what the hotel will cost"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Price"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "An estimated/average of what the restaurant will cost"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Price Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "An estimated/average of what the transport will cost"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Price Transport"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating of the place"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating of the atraction"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> <http://www.w3.org/2000/01/rdf-schema#label> "Rating Atraccio" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating of the restuarant"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Rating" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the restaurant"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurang name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the transport"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> <http://www.w3.org/2000/01/rdf-schema#label> "Transport name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/2000/01/rdf-schema#comment> "true if event is in the future, false otherwhise."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming> <http://www.w3.org/2000/01/rdf-schema#label> "is upcoming"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the place/activity"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore> <http://www.w3.org/2000/01/rdf-schema#comment> "A numeric indicator reflecting the overall tourism activity within the city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore> <http://www.w3.org/2000/01/rdf-schema#label> "tourism activity score"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographical latitude coordinates of the city."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#label> "Latitude Coordinates"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographical longitude coordinates of the city."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude Coordinates"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering andalusian culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Andalusian Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a tourist attraction such as museums or monuments."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> <http://www.w3.org/2000/01/rdf-schema#label> "Atraccio"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a beach hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Beach Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a budget hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Budget Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a business hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Business Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> <http://www.w3.org/2002/07/owl#equivalentClass> <https://dbpedia.org/page/City> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a city in which tourism services are offered."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> <http://www.w3.org/2000/01/rdf-schema#label> "Ciutat"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> <http://www.w3.org/2000/01/rdf-schema#comment> "Attractions with cultural significance, such as museums and monuments."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Attraction" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a cultural event in a city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Event"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a tourism event, such as a conference or festival."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> <http://www.w3.org/2000/01/rdf-schema#label> "Esdeveniment"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a gastronomic event in a city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Gastronomic Event"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering italian culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Italian Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering japanese culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Japanese Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a luxury hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Luxury Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering mediterranean culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Mediterranean Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering mexican culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Mexican Restaurant"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a music event in a city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Music Event"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio> <http://www.w3.org/2000/01/rdf-schema#comment> "Outdoor atractions such as parks and beaches."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio> <http://www.w3.org/2000/01/rdf-schema#label> "outdoor atraccio" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#oneOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Price category enum for restaurants, hotels and transport"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Price Category" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the private transport available in the city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Private Transport"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the public transport available in the city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Public Transport"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a dining establishment offering culinary experiences."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a rural hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Rural Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a sport event in a city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Sport Event"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a technologic event in a city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Technological Event"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> <http://www.w3.org/2000/01/rdf-schema#comment> "Any restaurant or atraction that has over 4.7 user rating."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> <http://www.w3.org/2000/01/rdf-schema#label> "Top rated service"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a tourist hotel providing lodging services for tourists."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Tourist Hotel"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a mode of transport available in the city."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport"@ca .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "If an event is in this class, it means that it has not happened yet"@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Upcoming Event" .
+# 
+# https://dbpedia.org/page/City
+<https://dbpedia.org/page/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/City> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a city in which tourism services are offered. (dbpedia)"@en .
+<https://dbpedia.org/page/City> <http://www.w3.org/2000/01/rdf-schema#label> "city (dbpedia)" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany> "Metro Barcelona" .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> "8.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName> "Autobus Barcelona" .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "A public transport service operating in Barcelona."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Autobús Barcelona" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/2002/07/owl#sameAs> <https://dbpedia.org/page/Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName> "Barcelona" .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "41.3874"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "2.1682"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "City instance representing Barcelona."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+# 
+# https://dbpedia.org/page/Barcelona
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> <http://www.w3.org/2002/07/owl#sameAs> <https://dbpedia.org/page/Bilbao> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "City instance representing Bilbao."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Bilbao"@en .
+# 
+# https://dbpedia.org/page/Bilbao
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> "2024-11-17T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "An event in Barcelona of cultural type."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Congres Barcelona" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Enum instance for hasPriceCategory property (high)."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> <http://www.w3.org/2000/01/rdf-schema#label> "High Price Category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> "252"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "A luxury hotel located in Barcelona."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Barcelona" .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Enum instance for hasPriceCategory property (low)."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Low Price Category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Enum instance for hasPriceCategory property (Medium)."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Price Category"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName> "Palau Barcelona" .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "A cultural attraction in Barcelona."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Palau Barcelona"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio> "4.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "A cultural attraction in Bilbao."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Palau Bilbao"@en .
+# 
+# http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> "65"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName> "Restaurant Delicia Barcelona" .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "A restaurant in Barcelona offering Andalusian cuisine."@en .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Delicia Barcelona" .
+# 
+# https://dbpedia.org/page/Barcelona
+<https://dbpedia.org/page/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "City instance representing Barcelona. (dbpedia)"@en .
+<https://dbpedia.org/page/Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona (dbpedia)"@en .
+# 
+# https://dbpedia.org/page/Bilbao
+<https://dbpedia.org/page/Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Bilbao> <http://www.w3.org/2000/01/rdf-schema#comment> "City instance representing Barcelona. (dbpedia)"@en .
+<https://dbpedia.org/page/Bilbao> <http://www.w3.org/2000/01/rdf-schema#label> "Bilbao (dbpedia)" .
+# 
+# https://dbpedia.org/page/Mobile_World_Congress
+<https://dbpedia.org/page/Mobile_World_Congress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Mobile_World_Congress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+<https://dbpedia.org/page/Mobile_World_Congress> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> "2025-03-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid25 <http://www.w3.org/2002/07/owl#members> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid103 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid103 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid103 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid103 <http://www.w3.org/2003/11/swrl#body> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/2003/11/swrl#arguments> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal> .
+_:genid109 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid109 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid111 .
+_:genid111 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid111 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid103 <http://www.w3.org/2003/11/swrl#head> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
+_:genid113 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid113 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid114 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid114 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid114 <http://www.w3.org/2000/01/rdf-schema#label> "S6" .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid114 <http://www.w3.org/2003/11/swrl#body> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/2003/11/swrl#arguments> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/2003/11/swrl#arguments> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid124 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid124 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid126 .
+_:genid126 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid126 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid114 <http://www.w3.org/2003/11/swrl#head> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
+_:genid128 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> .
+_:genid128 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid128 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid129 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid129 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid129 <http://www.w3.org/2000/01/rdf-schema#label> "S5" .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid129 <http://www.w3.org/2003/11/swrl#body> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid131 .
+_:genid131 <http://www.w3.org/2003/11/swrl#arguments> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid135 .
+_:genid135 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid135 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid135 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
+_:genid137 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid137 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid129 <http://www.w3.org/2003/11/swrl#head> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
+_:genid139 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> .
+_:genid139 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid139 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid140 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid140 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid140 <http://www.w3.org/2000/01/rdf-schema#label> "S7" .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid140 <http://www.w3.org/2003/11/swrl#body> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid142 .
+_:genid142 <http://www.w3.org/2003/11/swrl#arguments> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid146 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid146 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
+_:genid148 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid148 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid140 <http://www.w3.org/2003/11/swrl#head> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid150 .
+_:genid150 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> .
+_:genid150 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid150 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid151 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid151 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid151 <http://www.w3.org/2000/01/rdf-schema#label> "S13" .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid151 <http://www.w3.org/2003/11/swrl#body> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
+_:genid153 <http://www.w3.org/2003/11/swrl#arguments> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid153 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid157 .
+_:genid157 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid157 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid157 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid159 .
+_:genid159 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid159 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid151 <http://www.w3.org/2003/11/swrl#head> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid161 .
+_:genid161 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid161 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid162 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid162 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid162 <http://www.w3.org/2000/01/rdf-schema#label> "S9" .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid162 <http://www.w3.org/2003/11/swrl#body> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid164 .
+_:genid164 <http://www.w3.org/2003/11/swrl#arguments> _:genid166 .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid168 .
+_:genid168 <http://www.w3.org/2003/11/swrl#arguments> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid172 .
+_:genid172 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid172 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid172 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid174 .
+_:genid174 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid174 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid162 <http://www.w3.org/2003/11/swrl#head> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid176 .
+_:genid176 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> .
+_:genid176 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid176 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid177 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid177 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid177 <http://www.w3.org/2000/01/rdf-schema#label> "S8" .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid177 <http://www.w3.org/2003/11/swrl#body> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid179 .
+_:genid179 <http://www.w3.org/2003/11/swrl#arguments> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid180 .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid179 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid183 .
+_:genid183 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid183 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid183 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid185 .
+_:genid185 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid185 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid177 <http://www.w3.org/2003/11/swrl#head> _:genid186 .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid187 .
+_:genid187 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> .
+_:genid187 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid187 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid188 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid188 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid188 <http://www.w3.org/2000/01/rdf-schema#label> "S10" .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid188 <http://www.w3.org/2003/11/swrl#body> _:genid195 .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid189 .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid190 .
+_:genid190 <http://www.w3.org/2003/11/swrl#arguments> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid191 .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid190 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid194 .
+_:genid194 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid194 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid194 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid196 .
+_:genid196 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid196 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid188 <http://www.w3.org/2003/11/swrl#head> _:genid197 .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid198 .
+_:genid198 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> .
+_:genid198 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t> .
+_:genid198 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid33 <http://www.w3.org/2000/01/rdf-schema#label> "S14" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#arguments> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a> .
+_:genid43 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid44 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid44 <http://www.w3.org/2000/01/rdf-schema#label> "S11" .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid44 <http://www.w3.org/2003/11/swrl#body> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#arguments> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2024-05-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d> .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e> .
+_:genid50 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e> .
+_:genid52 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/2003/11/swrl#head> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e> .
+_:genid54 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid55 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid55 <http://www.w3.org/2000/01/rdf-schema#label> "S4" .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid55 <http://www.w3.org/2003/11/swrl#body> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#arguments> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid61 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid63 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/2003/11/swrl#head> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice> .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid65 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid66 <http://www.w3.org/2003/11/swrl#body> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2003/11/swrl#arguments> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/2003/11/swrl#arguments> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "80"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid76 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid78 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://www.w3.org/2003/11/swrl#head> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice> .
+_:genid80 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid80 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid81 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid81 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid81 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid81 <http://www.w3.org/2003/11/swrl#body> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/2003/11/swrl#arguments> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "80"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p> .
+_:genid87 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid87 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid89 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid81 <http://www.w3.org/2003/11/swrl#head> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid91 .
+_:genid91 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice> .
+_:genid91 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid91 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid92 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid92 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid92 <http://www.w3.org/2000/01/rdf-schema#label> "S12" .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid92 <http://www.w3.org/2003/11/swrl#body> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2003/11/swrl#arguments> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
+_:genid98 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r> .
+_:genid98 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid98 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid100 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid92 <http://www.w3.org/2003/11/swrl#head> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h> .
+_:genid102 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

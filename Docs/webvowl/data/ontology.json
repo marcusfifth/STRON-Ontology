@@ -1,0 +1,1683 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "ca", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "https://dbpedia.org/page", "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON" ],
+    "title" : {
+      "en" : "STRON: Smart Tourism Recommendations Ontology"
+    },
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "other" : {
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "STRON is a Smart Tourism Recommendations Ontology designed to integrate data on events, hotels, restaurants, attractions, and transport within urban environments. It supports complex queries and inference via OWL restrictions and SWRL rules, enabling recommendations based on quality, affordability, temporal scheduling, and geographical proximity. STRON aims to facilitate data interoperability and enrich decision support in tourism applications",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "STRON: Smart Tourism Recommendations Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessHotel",
+      "en" : "Business Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a business hotel providing lodging services for tourists."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportEvent",
+      "en" : "Sport Event"
+    },
+    "comment" : {
+      "en" : "Represents a sport event in a city."
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "ca" : "Transport"
+    },
+    "subClasses" : [ "28", "29" ],
+    "comment" : {
+      "en" : "Represents a mode of transport available in the city."
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "en" : "Luxury Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a luxury hotel providing lodging services for tourists."
+    },
+    "id" : "32",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TopRatedService",
+      "en" : "Top rated service"
+    },
+    "comment" : {
+      "en" : "Any restaurant or atraction that has over 4.7 user rating."
+    },
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalAtraccio",
+      "undefined" : "Cultural Attraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "A cultural attraction in Bilbao."
+      },
+      "labels" : {
+        "IRI-based" : "Palau_Bilbao",
+        "en" : "Palau Bilbao"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "A cultural attraction in Barcelona."
+      },
+      "labels" : {
+        "IRI-based" : "Palau_Barcelona",
+        "en" : "Palau Barcelona"
+      }
+    } ],
+    "comment" : {
+      "en" : "Attractions with cultural significance, such as museums and monuments."
+    },
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItalianRestaurant",
+      "en" : "Italian Restaurant"
+    },
+    "comment" : {
+      "en" : "Represents a dining establishment offering italian culinary experiences."
+    },
+    "id" : "58",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Atraccio",
+      "ca" : "Atraccio"
+    },
+    "subClasses" : [ "34", "62" ],
+    "comment" : {
+      "en" : "Represents a tourist attraction such as museums or monuments."
+    },
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat",
+    "equivalent" : [ "83" ],
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ciutat",
+      "ca" : "Ciutat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "City instance representing Bilbao."
+      },
+      "labels" : {
+        "IRI-based" : "Bilbao",
+        "en" : "Bilbao"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents a city in which tourism services are offered."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "en" : "Cultural Event"
+    },
+    "comment" : {
+      "en" : "Represents a cultural event in a city."
+    },
+    "id" : "50",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndalusianRestaurant",
+      "en" : "Andalusian Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "A restaurant in Barcelona offering Andalusian cuisine."
+      },
+      "labels" : {
+        "IRI-based" : "Restaurant_Delicia_Barcelona",
+        "undefined" : "Restaurant Delicia Barcelona"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents a dining establishment offering andalusian culinary experiences."
+    },
+    "id" : "84",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrivateTransport",
+      "en" : "Private Transport"
+    },
+    "comment" : {
+      "en" : "Represents the private transport available in the city."
+    },
+    "id" : "29",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Esdeveniment",
+      "ca" : "Esdeveniment"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Mobile_World_Congress",
+      "baseIri" : "https://dbpedia.org/page",
+      "labels" : {
+        "IRI-based" : "Mobile_World_Congress"
+      }
+    } ],
+    "subClasses" : [ "60", "67", "6", "50", "54", "52" ],
+    "comment" : {
+      "en" : "Represents a tourism event, such as a conference or festival."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MexicanRestaurant",
+      "en" : "Mexican Restaurant"
+    },
+    "comment" : {
+      "en" : "Represents a dining establishment offering mexican culinary experiences."
+    },
+    "id" : "86",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OutdoorAtraccio",
+      "undefined" : "outdoor atraccio"
+    },
+    "comment" : {
+      "en" : "Outdoor atractions such as parks and beaches."
+    },
+    "id" : "62",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RuralHotel",
+      "en" : "Rural Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a rural hotel providing lodging services for tourists."
+    },
+    "id" : "87",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "ca" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "A luxury hotel located in Barcelona."
+      },
+      "labels" : {
+        "IRI-based" : "Hotel_Royal_Barcelona",
+        "undefined" : "Hotel Royal Barcelona"
+      }
+    } ],
+    "subClasses" : [ "0", "32", "88", "87", "89", "90" ],
+    "comment" : {
+      "en" : "Represents a hotel providing lodging services for tourists."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicTransport",
+      "en" : "Public Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "A public transport service operating in Barcelona."
+      },
+      "labels" : {
+        "IRI-based" : "Autobus_Barcelona",
+        "undefined" : "Autobús Barcelona"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents the public transport available in the city."
+    },
+    "id" : "28",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "ca" : "Restaurant"
+    },
+    "subClasses" : [ "58", "86", "93", "84", "96" ],
+    "comment" : {
+      "en" : "Represents a dining establishment offering culinary experiences."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristHotel",
+      "en" : "Tourist Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a tourist hotel providing lodging services for tourists."
+    },
+    "id" : "88",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/City",
+    "baseIri" : "https://dbpedia.org/page",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "city (dbpedia)"
+    },
+    "comment" : {
+      "en" : "Represents a city in which tourism services are offered. (dbpedia)"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BudgetHotel",
+      "en" : "Budget Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a budget hotel providing lodging services for tourists."
+    },
+    "id" : "89",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachHotel",
+      "en" : "Beach Hotel"
+    },
+    "comment" : {
+      "en" : "Represents a beach hotel providing lodging services for tourists."
+    },
+    "id" : "90",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastroEvent",
+      "en" : "Gastronomic Event"
+    },
+    "comment" : {
+      "en" : "Represents a gastronomic event in a city."
+    },
+    "id" : "52",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JapaneseRestaurant",
+      "en" : "Japanese Restaurant"
+    },
+    "comment" : {
+      "en" : "Represents a dining establishment offering japanese culinary experiences."
+    },
+    "id" : "96",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UpcomingEvent",
+      "undefined" : "Upcoming Event"
+    },
+    "comment" : {
+      "en" : "If an event is in this class, it means that it has not happened yet"
+    },
+    "id" : "67",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediterraneanRestaurant",
+      "en" : "Mediterranean Restaurant"
+    },
+    "comment" : {
+      "en" : "Represents a dining establishment offering mediterranean culinary experiences."
+    },
+    "id" : "93",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "en" : "Music Event"
+    },
+    "comment" : {
+      "en" : "Represents a music event in a city."
+    },
+    "id" : "60",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PriceCategory",
+      "undefined" : "Price Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "Enum instance for hasPriceCategory property (Medium)."
+      },
+      "labels" : {
+        "IRI-based" : "MediumPrice",
+        "en" : "Medium Price Category"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "Enum instance for hasPriceCategory property (high)."
+      },
+      "labels" : {
+        "IRI-based" : "HighPrice",
+        "en" : "High Price Category"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice",
+      "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+      "comment" : {
+        "en" : "Enum instance for hasPriceCategory property (low)."
+      },
+      "labels" : {
+        "IRI-based" : "LowPrice",
+        "en" : "Low Price Category"
+      }
+    } ],
+    "comment" : {
+      "en" : "Price category enum for restaurants, hotels and transport"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologicalEvent",
+      "en" : "Technological Event"
+    },
+    "comment" : {
+      "en" : "Represents a technologic event in a city."
+    },
+    "id" : "54",
+    "superClasses" : [ "3" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isUpcoming",
+      "en" : "is upcoming"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "true if event is in the future, false otherwhise."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "10",
+    "subproperty" : [ "11", "12", "13", "14", "15", "16" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasRestaurantName",
+      "en" : "Restaurang name"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "The name of the restaurant"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasPriceCategoryHotel",
+      "en" : "has hotel price category"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a hotel to a price category such as low, medium or high."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "27",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "18",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "27",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "27",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "27",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasRatingAtraccio",
+      "undefined" : "Rating Atraccio"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "The overall rating of the atraction"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "40"
+  }, {
+    "range" : "18",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isLocatedInRestaurant",
+      "en" : "is located in (restaurants)"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Relates a restauran to its city."
+    },
+    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
+    "id" : "14"
+  }, {
+    "range" : "27",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "24",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "3",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "3",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "3",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "long",
+      "en" : "Longitude Coordinates"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "The geographical longitude coordinates of the city."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "servesCity",
+      "en" : "serves city"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Relates a transport service to the city it serves."
+    },
+    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
+    "id" : "57"
+  }, {
+    "range" : "3",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "35",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasPriceRestaurant",
+      "en" : "Price Restaurant"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "An estimated/average of what the restaurant will cost"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "63"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasPriceHotel",
+      "en" : "Hotel Price"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "An estimated/average of what the hotel will cost"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isLocatedInAtraccio",
+      "en" : "is located in (atractions)"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "35",
+    "comment" : {
+      "en" : "Relates an attraction to its city."
+    },
+    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
+    "id" : "12"
+  }, {
+    "range" : "3",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "27",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "27",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "lat",
+      "en" : "Latitude Coordinates"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "The geographical latitude coordinates of the city."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "en" : "event date"
+    },
+    "cardinality" : "1",
+    "domain" : "3",
+    "comment" : {
+      "en" : "The date when the event takes place."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isLocatedInHotel",
+      "en" : "is located in (hotels)"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a hotel to its city."
+    },
+    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "tourismActivityScore",
+      "en" : "tourism activity score"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "A numeric indicator reflecting the overall tourism activity within the city."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasRatingRestaurant",
+      "undefined" : "Restaurant Rating"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "The overall rating of the restuarant"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "rating"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "The overall rating of the place"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "occursIn",
+      "en" : "occurs in"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Relates an event to the city where it occurs."
+    },
+    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "The name of the place/activity"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "91"
+  }, {
+    "range" : "18",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "18",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "18",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "18",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasPriceTransport",
+      "en" : "Price Transport"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "An estimated/average of what the transport will cost"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasHotelCategory",
+      "en" : "hotel cateogry"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "category of the hotel. ranging from 1 to 5. Also known as stars."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "99"
+  }, {
+    "range" : "1",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "1",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "18",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "1",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasPriceCategoryTransport",
+      "en" : "has transport price category"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "27",
+    "comment" : {
+      "en" : "Relates a transport to a price category such as low, medium or high."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "1",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "24",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "18",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "27",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "3",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "1",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "24",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasPriceCategoryRestaurant",
+      "en" : "has restaurant price category"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Relates a restaurant to a price category such as low, medium or high."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "18",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasCiutatName",
+      "en" : "City name"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "The name of the city"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "115"
+  }, {
+    "range" : "45",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "3",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasAtraccioName",
+      "en" : "Atraction name"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "The name of the atraction"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasHotelName",
+      "en" : "Hotel name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The name of the hotel"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasEsdevenimentName",
+      "en" : "Event name"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The name of the event"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "en" : "company"
+    },
+    "cardinality" : "1",
+    "domain" : "27",
+    "comment" : {
+      "en" : "The company providing the transport service."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasTransportName",
+      "en" : "Transport name"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "The name of the transport"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice",
+    "baseIri" : "http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasPrice",
+      "en" : "price"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "An estimated/average of what the activity will cost"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "123"
+  } ]
+}

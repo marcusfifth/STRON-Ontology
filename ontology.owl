@@ -1,0 +1,2196 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#"
+     xml:base="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:STRON="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON">
+        <terms:abstract xml:lang="en">STRON is a Smart Tourism Recommendations Ontology designed to integrate data on events, hotels, restaurants, attractions, and transport within urban environments. It supports complex queries and inference via OWL restrictions and SWRL rules, enabling recommendations based on quality, affordability, temporal scheduling, and geographical proximity. STRON aims to facilitate data interoperability and enrich decision support in tourism applications</terms:abstract>
+        <terms:title xml:lang="en">STRON: Smart Tourism Recommendations Ontology</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory"/>
+        <rdfs:comment xml:lang="en">Relates a hotel to a price category such as low, medium or high.</rdfs:comment>
+        <rdfs:label xml:lang="en">has hotel price category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory"/>
+        <rdfs:comment xml:lang="en">Relates a restaurant to a price category such as low, medium or high.</rdfs:comment>
+        <rdfs:label xml:lang="en">has restaurant price category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory"/>
+        <rdfs:comment xml:lang="en">Relates a transport to a price category such as low, medium or high.</rdfs:comment>
+        <rdfs:label xml:lang="en">has transport price category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInAtraccio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:comment xml:lang="en">Relates an attraction to its city.</rdfs:comment>
+        <rdfs:label xml:lang="en">is located in (atractions)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:comment xml:lang="en">Relates a hotel to its city.</rdfs:comment>
+        <rdfs:label xml:lang="en">is located in (hotels)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isLocatedInRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:comment xml:lang="en">Relates a restauran to its city.</rdfs:comment>
+        <rdfs:label xml:lang="en">is located in (restaurants)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#occursIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:comment xml:lang="en">Relates an event to the city where it occurs.</rdfs:comment>
+        <rdfs:label xml:lang="en">occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#servesCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:comment xml:lang="en">Relates a transport service to the city it serves.</rdfs:comment>
+        <rdfs:label xml:lang="en">serves city</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasAtraccioName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the atraction</rdfs:comment>
+        <rdfs:label xml:lang="en">Atraction name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCiutatName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the city</rdfs:comment>
+        <rdfs:label xml:lang="en">City name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The company providing the transport service.</rdfs:comment>
+        <rdfs:label xml:lang="en">company</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">The date when the event takes place.</rdfs:comment>
+        <rdfs:label xml:lang="en">event date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasEsdevenimentName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the event</rdfs:comment>
+        <rdfs:label xml:lang="en">Event name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">category of the hotel. ranging from 1 to 5. Also known as stars.</rdfs:comment>
+        <rdfs:label xml:lang="en">hotel cateogry</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">Hotel name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">An estimated/average of what the activity will cost</rdfs:comment>
+        <rdfs:label xml:lang="en">price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">An estimated/average of what the hotel will cost</rdfs:comment>
+        <rdfs:label xml:lang="en">Hotel Price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">An estimated/average of what the restaurant will cost</rdfs:comment>
+        <rdfs:label xml:lang="en">Price Restaurant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPrice"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">An estimated/average of what the transport will cost</rdfs:comment>
+        <rdfs:label xml:lang="en">Price Transport</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The overall rating of the place</rdfs:comment>
+        <rdfs:label xml:lang="en">rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The overall rating of the atraction</rdfs:comment>
+        <rdfs:label>Rating Atraccio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The overall rating of the restuarant</rdfs:comment>
+        <rdfs:label>Restaurant Rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRestaurantName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">Restaurang name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasTransportName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the transport</rdfs:comment>
+        <rdfs:label xml:lang="en">Transport name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#isUpcoming">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">true if event is in the future, false otherwhise.</rdfs:comment>
+        <rdfs:label xml:lang="en">is upcoming</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name of the place/activity</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#tourismActivityScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">A numeric indicator reflecting the overall tourism activity within the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">tourism activity score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The geographical latitude coordinates of the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Latitude Coordinates</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The geographical longitude coordinates of the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude Coordinates</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering andalusian culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Andalusian Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingAtraccio"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Represents a tourist attraction such as museums or monuments.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Atraccio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BeachHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a beach hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Beach Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BudgetHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a budget hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Budget Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#BusinessHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a business hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Business Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat">
+        <owl:equivalentClass rdf:resource="https://dbpedia.org/page/City"/>
+        <rdfs:comment xml:lang="en">Represents a city in which tourism services are offered.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Ciutat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+        <rdfs:comment xml:lang="en">Attractions with cultural significance, such as museums and monuments.</rdfs:comment>
+        <rdfs:label>Cultural Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">Represents a cultural event in a city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Represents a tourism event, such as a conference or festival.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Esdeveniment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#GastroEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">Represents a gastronomic event in a city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gastronomic Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Represents a hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#ItalianRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering italian culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Italian Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#JapaneseRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering japanese culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Japanese Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a luxury hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Luxury Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediterraneanRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering mediterranean culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mediterranean Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MexicanRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering mexican culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mexican Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MusicEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">Represents a music event in a city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#OutdoorAtraccio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+        <rdfs:comment xml:lang="en">Outdoor atractions such as parks and beaches.</rdfs:comment>
+        <rdfs:label>outdoor atraccio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Price category enum for restaurants, hotels and transport</rdfs:comment>
+        <rdfs:label>Price Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PrivateTransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:comment xml:lang="en">Represents the private transport available in the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Private Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        <rdfs:comment xml:lang="en">Represents the public transport available in the city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Public Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRatingRestaurant"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Represents a dining establishment offering culinary experiences.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#RuralHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a rural hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rural Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#SportEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">Represents a sport event in a city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sport Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TechnologicalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">Represents a technologic event in a city.</rdfs:comment>
+        <rdfs:label xml:lang="en">Technological Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService">
+        <rdfs:comment xml:lang="en">Any restaurant or atraction that has over 4.7 user rating.</rdfs:comment>
+        <rdfs:label xml:lang="en">Top rated service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TouristHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <rdfs:comment xml:lang="en">Represents a tourist hotel providing lodging services for tourists.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tourist Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasCompany"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Represents a mode of transport available in the city.</rdfs:comment>
+        <rdfs:label xml:lang="ca">Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <rdfs:comment xml:lang="en">If an event is in this class, it means that it has not happened yet</rdfs:comment>
+        <rdfs:label>Upcoming Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/page/City -->
+
+
+    <owl:Class rdf:about="https://dbpedia.org/page/City">
+        <rdfs:comment xml:lang="en">Represents a city in which tourism services are offered. (dbpedia)</rdfs:comment>
+        <rdfs:label>city (dbpedia)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Autobus_Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PublicTransport"/>
+        <servesCity rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona"/>
+        <hasCompany>Metro Barcelona</hasCompany>
+        <hasPriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.75</hasPriceTransport>
+        <hasTransportName>Autobus Barcelona</hasTransportName>
+        <rdfs:comment xml:lang="en">A public transport service operating in Barcelona.</rdfs:comment>
+        <rdfs:label>Autobús Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona">
+        <owl:sameAs rdf:resource="https://dbpedia.org/page/Barcelona"/>
+        <hasCiutatName>Barcelona</hasCiutatName>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.3874</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.1682</wgs84_pos:long>
+        <rdfs:comment xml:lang="en">City instance representing Barcelona.</rdfs:comment>
+        <rdfs:label>Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Barcelona -->
+
+
+    <rdf:Description rdf:about="https://dbpedia.org/page/Barcelona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+        <owl:sameAs rdf:resource="https://dbpedia.org/page/Bilbao"/>
+        <rdfs:comment xml:lang="en">City instance representing Bilbao.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Bilbao -->
+
+
+    <rdf:Description rdf:about="https://dbpedia.org/page/Bilbao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Congres_Barcelona">
+        <occursIn rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-17T00:00:00</hasDate>
+        <rdfs:comment xml:lang="en">An event in Barcelona of cultural type.</rdfs:comment>
+        <rdfs:label>Congres Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory"/>
+        <rdfs:comment xml:lang="en">Enum instance for hasPriceCategory property (high).</rdfs:comment>
+        <rdfs:label xml:lang="en">High Price Category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel_Royal_Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+        <isLocatedInHotel rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona"/>
+        <hasHotelCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasHotelCategory>
+        <hasPriceHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">252</hasPriceHotel>
+        <rdfs:comment xml:lang="en">A luxury hotel located in Barcelona.</rdfs:comment>
+        <rdfs:label>Hotel Royal Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice">
+        <rdfs:comment xml:lang="en">Enum instance for hasPriceCategory property (low).</rdfs:comment>
+        <rdfs:label xml:lang="en">Low Price Category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice">
+        <rdfs:comment xml:lang="en">Enum instance for hasPriceCategory property (Medium).</rdfs:comment>
+        <rdfs:label xml:lang="en">Medium Price Category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio"/>
+        <isLocatedInAtraccio rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona"/>
+        <hasAtraccioName>Palau Barcelona</hasAtraccioName>
+        <hasRatingAtraccio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</hasRatingAtraccio>
+        <rdfs:comment xml:lang="en">A cultural attraction in Barcelona.</rdfs:comment>
+        <rdfs:label xml:lang="en">Palau Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Palau_Bilbao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#CulturalAtraccio"/>
+        <isLocatedInAtraccio rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Bilbao"/>
+        <hasRatingAtraccio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</hasRatingAtraccio>
+        <rdfs:comment xml:lang="en">A cultural attraction in Bilbao.</rdfs:comment>
+        <rdfs:label xml:lang="en">Palau Bilbao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant_Delicia_Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#AndalusianRestaurant"/>
+        <isLocatedInRestaurant rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Barcelona"/>
+        <hasPriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</hasPriceRestaurant>
+        <hasRatingRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</hasRatingRestaurant>
+        <hasRestaurantName>Restaurant Delicia Barcelona</hasRestaurantName>
+        <rdfs:comment xml:lang="en">A restaurant in Barcelona offering Andalusian cuisine.</rdfs:comment>
+        <rdfs:label>Restaurant Delicia Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Barcelona">
+        <rdfs:comment xml:lang="en">City instance representing Barcelona. (dbpedia)</rdfs:comment>
+        <rdfs:label xml:lang="en">Barcelona (dbpedia)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Bilbao -->
+
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Bilbao">
+        <rdfs:comment xml:lang="en">City instance representing Barcelona. (dbpedia)</rdfs:comment>
+        <rdfs:label>Bilbao (dbpedia)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Mobile_World_Congress -->
+
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Mobile_World_Congress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-01T00:00:00</hasDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Ciutat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#PriceCategory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasHotelCategory"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/rVal"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.9</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LuxuryHotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceRestaurant"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryRestaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S13</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Restaurant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Transport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceTransport"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryTransport"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S14</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Atraccio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S11</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Esdeveniment"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasDate"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/d"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-01T00:00:00</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#UpcomingEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#HighPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#MediumPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceHotel"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasPriceCategoryHotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#LowPrice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S12</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#Hotel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#hasRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON#TopRatedService"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/marcusfifth/ontologies/2025/3/STRON/h"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
